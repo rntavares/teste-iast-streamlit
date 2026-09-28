@@ -1,0 +1,41 @@
+schema: '2.0'
+stages:
+  gerar_dados:
+    cmd: python gerar_dados.py --versao 1
+    deps:
+    - path: gerar_dados.py
+      hash: md5
+      md5: 1151f4d863096261b742deccafe58001
+      size: 1110
+    params:
+      params.yaml:
+        versao_dados: 1
+    outs:
+    - path: dados/clientes.csv
+      hash: md5
+      md5: 6acf842e50e6e85a4cbd06a625428bf4
+      size: 32610
+  treinar:
+    cmd: python treinar.py --n-estimators 200 --max-depth 8
+    deps:
+    - path: dados/clientes.csv
+      hash: md5
+      md5: 6acf842e50e6e85a4cbd06a625428bf4
+      size: 32610
+    - path: treinar.py
+      hash: md5
+      md5: 0a58335dcb485577e4e48183b4fc53e7
+      size: 1238
+    params:
+      params.yaml:
+        max_depth: 8
+        n_estimators: 200
+    outs:
+    - path: metricas.json
+      hash: md5
+      md5: 800ede1e5f341420bff310aaa03475f3
+      size: 59
+    - path: modelo.joblib
+      hash: md5
+      md5: 335d6fb021b1562c5cafd9d7bf9ebfff
+      size: 3755961
