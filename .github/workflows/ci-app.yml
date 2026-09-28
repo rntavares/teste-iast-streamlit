@@ -13,7 +13,7 @@ on:
 
 jobs:
   testar-app:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04   # fixo: o ubuntu-latest muda de versão sozinho
     defaults:
       run:
         working-directory: Labs-streamlit/Aula01_Pipeline_ML_Streamlit/Lab_GitHub_CI_do_App

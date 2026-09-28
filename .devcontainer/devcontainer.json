@@ -5,7 +5,7 @@
     "ghcr.io/devcontainers/features/docker-in-docker:2": {},
     "ghcr.io/devcontainers/features/sshd:1": {}
   },
-  "postCreateCommand": "pip install --no-cache-dir -r Labs-streamlit/requirements.txt",
+  "updateContentCommand": "pip install --no-cache-dir -r Labs-streamlit/requirements.txt",
   "forwardPorts": [8501, 5000, 8000],
   "portsAttributes": {
     "8501": { "label": "Streamlit", "onAutoForward": "openBrowser" },
