@@ -52,3 +52,4 @@ No mesmo branch, mude `versao_dados: 1` para `versao_dados: 2` (4.000 clientes),
 ## Para discutir
 - Aqui o pipeline gera os próprios dados. Num projeto real, o CI precisaria baixar o dataset com `dvc pull` de um storage remoto. Onde ficariam as credenciais desse storage? (Dica: **Settings → Secrets and variables → Actions**.)
 - Que regra você colocaria no PR: bloquear o merge se o F1 cair mais que X?
+# teste
