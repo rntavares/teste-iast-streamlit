@@ -1,0 +1,6 @@
+# Usado pelo Streamlit Community Cloud no deploy.
+# A versão do scikit-learn PRECISA ser a mesma que gerou o modelo_churn.joblib.
+streamlit==1.64.0
+scikit-learn==1.8.0
+pandas==3.0.2
+joblib==1.5.3
