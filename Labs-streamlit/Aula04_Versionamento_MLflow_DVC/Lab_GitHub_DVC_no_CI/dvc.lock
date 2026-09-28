@@ -16,7 +16,7 @@ stages:
       md5: 6acf842e50e6e85a4cbd06a625428bf4
       size: 32610
   treinar:
-    cmd: python treinar.py --n-estimators 200 --max-depth 8
+    cmd: python treinar.py --n-estimators 200 --max-depth 3
     deps:
     - path: dados/clientes.csv
       hash: md5
@@ -28,14 +28,14 @@ stages:
       size: 1238
     params:
       params.yaml:
-        max_depth: 8
+        max_depth: 3
         n_estimators: 200
     outs:
     - path: metricas.json
       hash: md5
-      md5: 800ede1e5f341420bff310aaa03475f3
+      md5: d6fc7a70e9446e79068667a93e7b8c1f
       size: 59
     - path: modelo.joblib
       hash: md5
-      md5: 335d6fb021b1562c5cafd9d7bf9ebfff
-      size: 3755961
+      md5: 8f40804d56c4b449a79c4401ccb1a28b
+      size: 320761
