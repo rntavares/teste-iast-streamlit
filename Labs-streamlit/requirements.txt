@@ -10,3 +10,5 @@ joblib==1.5.3
 mlflow==3.16.1
 dvc==3.67.1
 evidently==0.7.23
+# Testes do Lab GitHub da Aula 01 (pytest tests/ -v)
+pytest==9.1.1

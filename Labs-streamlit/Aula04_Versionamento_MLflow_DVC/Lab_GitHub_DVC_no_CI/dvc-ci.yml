@@ -18,7 +18,7 @@ permissions:
 
 jobs:
   reproduzir:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04   # fixo: o ubuntu-latest muda de versão sozinho
     defaults:
       run:
         working-directory: Labs-streamlit/Aula04_Versionamento_MLflow_DVC/Lab_GitHub_DVC_no_CI

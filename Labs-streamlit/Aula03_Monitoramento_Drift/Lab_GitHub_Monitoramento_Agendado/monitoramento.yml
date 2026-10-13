@@ -17,7 +17,7 @@ permissions:
 
 jobs:
   monitorar:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04   # fixo: o ubuntu-latest muda de versão sozinho
     defaults:
       run:
         working-directory: Labs-streamlit/Aula03_Monitoramento_Drift/Lab_GitHub_Monitoramento_Agendado
