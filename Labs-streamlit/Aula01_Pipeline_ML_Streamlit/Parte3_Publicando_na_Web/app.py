@@ -11,7 +11,7 @@ import streamlit as st
 MODELO = Path(__file__).parent / "modelo_churn.joblib"
 
 # EXERCÍCIO 2: coloque o seu nome aqui
-AUTOR = "Seu nome"
+AUTOR = "Prof. Rafael Tavares"
 
 
 @st.cache_resource  # carrega o modelo UMA vez, não a cada interação
@@ -21,7 +21,7 @@ def load_model():
 
 model = load_model()
 
-st.title("Previsão de Churn de Clientes")
+st.title("Previsão de Churn — versão 2")
 st.caption(f"Publicado por {AUTOR} · POSTECH · Deploy e Monitoramento de ML")
 
 idade = st.slider("Idade do cliente", 18, 90, 35)
