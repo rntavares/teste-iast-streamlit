@@ -31,7 +31,7 @@ valor = st.number_input("Valor mensal (R$)", min_value=0.0, value=79.90, step=10
 limiar = st.slider("Limiar de risco", 0.1, 0.9, 0.5)
 
 if st.button("Prever"):
-    entrada = pd.DataFrame([[idade, meses, valor]], columns=["idade", "meses", "valor"])
+    entrada = pd.DataFrame([[idade, meses, valor]], columns=["idade", "meses", "valor_mensal"])
     proba = model.predict_proba(entrada)[0][1]
     st.metric("Probabilidade de churn", f"{proba:.1%}")
     if proba > limiar:
